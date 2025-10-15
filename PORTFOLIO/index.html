@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio - Ryan Bouron</title>
+      <meta name="description" content="Portfolio de Ryan Bouron, étudiant en cybersécurité et passionné de pentesting web. Découvrez ses compétences, projets et contactez-le directement.">
+      <meta name="keywords" content="Portfolio, Cybersécurité, Pentesting, CTF, Python, Linux, Burp Suite, Ryan Bouron">
+      <meta name="author" content="Ryan Bouron">
+      <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { height:100%; font-family:'Barlow', sans-serif; background:#0a0a0a; color:#fff; scroll-behavior:smooth; }
+      .navbar { display:flex; justify-content:space-between; align-items:center; padding:25px 40px 25px 160px; background:rgba(0,0,0,.5); position:fixed; width:100%; top:0; z-index:1000; }
+      .nav-links { display:flex; gap:25px; list-style:none; padding-right:160px; font-size:20px; }
+      .nav-links a, .navbar .logo a { color:#fff; text-decoration:none; padding-bottom:5px; font-weight:500; position:relative; }
+      .nav-links a::after, .navbar .logo a::after { content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:#fff; border-radius:2px; transition:width .4s ease-in-out; }
+      .nav-links a:hover::after, .navbar .logo a:hover::after { width:100%; }
+      .hero { display:flex; justify-content:center; align-items:center; height:100vh; background:url("images/bg.webp") center/cover no-repeat; position:relative; }
+      .hero .overlay { position:absolute; inset:0; background:rgba(0,0,0,.45); }
+      .hero-content { z-index:1; text-align:center; }
+      .highlight-box { display:inline-block; background:rgba(0,0,0,.65); padding:36px 56px; border-radius:110px; box-shadow:0 8px 30px rgba(0,0,0,.6); }
+      .hero .command { font-weight:600; color:#fff; font-size:34px; margin-bottom:-10px; }
+      .hero h1 { font-size:64px; font-weight:700; color:#fff; margin-top:8px; }
+      .hero h2 { font-size:34px; font-weight:500; color:#fff; margin-top:6px; }
+      </style>
+      <link rel="icon" type="image/png" href="images/favicon.png">
+      <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
+      <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+      <link rel="stylesheet" href="/css/fonts.css" media="print" onload="this.media='all'">
+      <link rel="preload" href="css/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="css/bootstrap-icons.css"></noscript>
+      <noscript><link rel="stylesheet" href="css/bootstrap-icons.css"></noscript>
+      <link rel="preload" as="image" href="images/bg.webp" fetchpriority="high">
+      <link rel="preconnect" href="https://www.googletagmanager.com">
+      <link rel="preconnect" href="https://consent.cookiebot.com">
+      <script id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="34b30c17-f3b1-4e5a-9558-26b813d18317"
+        data-blockingmode="auto"
+        type="text/javascript"
+        defer>
+      </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNDKFNJ4D3"></script>
+    </head>
+   <body>
+      <header>
+         <nav class="navbar">
+            <div class="logo">
+               <a href="#">$ ./PORTFOLIO</a>
+            </div>
+            <div class="burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <ul class="nav-links">
+               <li><a href="#profil">PROFIL</a></li>
+               <li><a href="#competences">COMPÉTENCES</a></li>
+               <li><a href="#projets">PROJETS</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section class="hero">
+         <div class="overlay"></div>
+         <div class="hero-content">
+            <div class="highlight-box">
+               <p class="command">$ whoami</p>
+               <h1>RYAN BOURON</h1>
+               <h2>Étudiant en Cybersécurité</h2>
+            </div>
+         </div>
+      </section>
+      <section id="profil" class="profil-section">
+         <div class="container">
+            <div>
+               <h2 class="section-title">Qui suis-je ?</h2>
+               <div class="profile-card">
+                  <img class="profile-img" src="images/profile.webp" alt="Photo de Ryan Bouron" loading="lazy">
+                  <p class="short-desc">
+                     Passionné par la cybersécurité et le hacking éthique.<br>
+                     Étudiant Bac Pro CIEL (Cybersécurité, Informatique et Réseaux, Électronique)
+                  </p>
+                  <a class="cv-btn" href="files/CV-RYAN-BOURON.pdf" download>
+                  <i class="bi bi-download"></i> Télécharger CV
+                  </a>
+               </div>
+            </div>
+            <div class="terminal-wrapper">
+               <div class="terminal-card">
+                  <div class="term-header">
+                     <span class="dot red"></span>
+                     <span class="dot yellow"></span>
+                     <span class="dot green"></span>
+                     <div class="shell-title">Profil — Portfolio</div>
+                  </div>
+                  <div class="term-body" aria-label="Profil terminal">
+                     <pre><code><span class="prompt">$</span> <span class="command">./get_profile.sh</span>
+<span class="output">Passionné par la cybersécurité et le hacking éthique.</span>
+<span class="output">Étudiant Bac Pro CIEL (Cybersécurité, Informatique et Réseaux, Électronique)</span>
+<span class="output">Informations :</span>
+&gt; <span class="info">Pentesting web</span>
+&gt; <span class="info">CTFs :</span> TryHackMe · Mars@Hack 2025 · Pass ton hack d'abord 2025/2023
+&gt; <span class="info">Outils :</span> Burp Suite (Intruder, Repeater)
+<span class="prompt">$</span> <span class="command">echo $LOCATION</span>
+<span class="var">Angoulême, France</span>
+<span class="prompt">$</span> <span class="command">cat contact.txt</span>
+<span class="output">Email: <span class="var"><a href="mailto:bouronryan@gmail.com" class="mailto">bouronryan@gmail.com</a></span></span>
+<span class="output">LinkedIn: <span class="link"><a href="https://www.linkedin.com/in/Paria_HRZ" target="_blank" class="linkedin">linkedin.com/Paria_HRZ</a></span></span>
+<span class="output">Discord: <span class="link"><a href="https://discord.com/users/633695329841184788" target="_blank" class="discord">paria_hrz</a></span></span>
+<span class="prompt blink">$</span> _|
+            </code></pre>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="competences" class="competences-section">
+         <div class="container">
+            <h2 class="section-title">Mes compétences</h2>
+            <div class="skills-grid">
+               <div class="skill-card">
+                  <i class="bi bi-window-stack"></i>
+                  <h3>Pentesting Web</h3>
+                  <p>Capacité à identifier, analyser et exploiter des vulnérabilités dans des applications web. Expérience acquise via des CTF et des environnements d’entraînement (TryHackMe, PortSwigger). Mise en pratique de techniques comme l’injection SQL, le XSS ou la manipulation d’authentifications.</p>
+               </div>
+               <div class="skill-card">
+                  <i class="bi bi-diagram-3"></i>
+                  <h3>Manipulation de Requêtes</h3>
+                  <p>Maîtrise des outils Burp Suite (Intruder, Repeater) pour intercepter et modifier les requêtes HTTP. Utilisé pour comprendre le fonctionnement interne des applications web et tester la robustesse des mécanismes de sécurité.</p>
+               </div>
+               <div class="skill-card">
+                  <i class="bi bi-flag"></i>
+                  <h3>Capture The Flag (CTF)</h3>
+                  <p>Participation régulière à des compétitions de cybersécurité comme Mars@Hack, Pass ton Hack d’abord et CSAW. Expérience en résolution de challenges variés (stéganographie, exploitation web, analyse réseau). Développement d’une méthode d’investigation structurée et capacité à travailler sous pression.</p>
+               </div>
+               <div class="skill-card">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Programmation Python</h3>
+                  <p>Connaissances en développement de scripts pour automatiser des tâches et résoudre des problèmes spécifiques. Expériences personnelles comme la création de petits projets (ex : jeu de devinettes). Python utilisé aussi comme support dans certains exercices de cybersécurité.</p>
+               </div>
+               <div class="skill-card">
+                  <i class="bi bi-terminal"></i>
+                  <h3>Systèmes & CLI</h3>
+                  <p>Utilisation régulière de distributions Linux (Kali, Debian) et des outils en ligne de commande. Familiarité avec les environnements de tests d’intrusion, l’utilisation de GDB pour l’analyse de binaires et la manipulation de fichiers systèmes. Approche axée sur la pratique, en lien avec des scénarios concrets de cybersécurité.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="projets" class="projets-section">
+         <div class="container">
+            <h2 class="section-title-project">Mes projets</h2>
+            <div class="projects-grid">
+               <div class="project-card">
+                  <i class="bi bi-laptop"></i>
+                  <h3>I-Learning | Site de CTF</h3>
+                  <p>Création d’un site web de Capture The Flag (CTF) réalisé entièrement à deux, de la conception au déploiement. Front-end en HTML, CSS, JS ; back-end en PHP. Gestion du serveur et de la base de données. Suivi des challenges et tableau de classement.</p>
+                  <a href="https://github.com/I-learning16" target="_blank" class="project-btn">En savoir plus</a>
+               </div>
+               <div class="project-card">
+                  <i class="bi bi-wifi"></i>
+                  <h3>Portail Wi‑Fi</h3>
+                  <p>Démo pédagogique simulant un portail Wi-Fi pour montrer la collecte sécurisée de certaines données côté client. Projet éducatif pour sensibiliser aux risques liés aux portails captifs et travailler avec des APIs web.</p>
+                  <a href="https://github.com/PariaHRZ/wifi-portal-phishing-demo" target="_blank" class="project-btn">En savoir plus</a>
+               </div>
+               <div class="project-card">
+                  <i class="bi bi-search"></i>
+                  <h3>Web Crawler</h3>
+                  <p>Petit crawler web en Python. Explore une URL de départ, visite les pages liées, extrait les liens HTML valides et les enregistre dans un fichier texte. Familiarisation avec le web scraping et l’automatisation de tâches.</p>
+                  <a href="https://github.com/PariaHRZ/web-crawler" target="_blank" class="project-btn">En savoir plus</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact" class="contact-section">
+         <div class="container">
+            <h2 class="section-title-contact">Me contacter</h2>
+            <div class="contact-shell">
+               <div class="shell-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <div class="shell-title">Contact — Portfolio</div>
+               </div>
+               <div class="shell-body">
+                  <form id="contactForm" class="contact-form">
+                     <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Ton nom" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ton.email@example.com" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ton message..." required></textarea>
+                     </div>
+                     <button type="submit" class="contact-btn">Envoyer</button>
+                     <div id="response" class="response-message"></div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <p>© 2025 Ryan Bouron — Tous droits réservés</p>
+         <div class="footer-links">
+            <a href="https://github.com/PariaHRZ" target="_blank">GitHub</a>
+            <a href="mailto:contact@i-learning-project.fr">Email</a>
+            <a href="https://discord.com/users/633695329841184788" target="_blank">Discord</a>
+         </div>
+      </footer>
+      <script>
+         const burger = document.querySelector('.burger');
+         const nav = document.querySelector('.nav-links');
+         burger.addEventListener('click', () => {
+           burger.classList.toggle('active');
+           nav.classList.toggle('active');
+         });
+         
+         const form = document.getElementById('contactForm');
+         const responseDiv = document.getElementById('response');
+         
+         form.addEventListener('submit', async (e) => {
+           e.preventDefault();
+           responseDiv.innerHTML = "Envoi en cours...";
+           const formData = new FormData(form);
+           try {
+             const res = await fetch("https://api.ryan.pixicode.dev/contact", {
+               method: "POST",
+               body: formData
+             });
+             const data = await res.json();
+             if (data.success) {
+               responseDiv.innerHTML = "<span style='color:#16a34a;'>Message envoyé avec succès !</span>";
+               form.reset();
+             } else {
+               responseDiv.innerHTML = "<span style='color:#dc2626;'>Erreur lors de l’envoi du message.</span>";
+             }
+           } catch (err) {
+             responseDiv.innerHTML = "<span style='color:#dc2626;'>Erreur de connexion au serveur.</span>";
+             console.error(err);
+           }
+         });
+         
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-LNDKFNJ4D3');
+      </script>
+   </body>
+</html>

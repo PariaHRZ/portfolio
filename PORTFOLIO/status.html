@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="server-status" style="
+        padding: 10px 20px; 
+        border-radius: 12px; 
+        font-weight: bold; 
+        font-family: 'Barlow', sans-serif; 
+        width: fit-content;
+        margin: 20px auto;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    ">
+    Vérification du serveur...
+    </div>
+
+    <script>
+    async function checkServer() {
+        const statusDiv = document.getElementById("server-status");
+        try {
+            const res = await fetch("https://ryan.pixicode.dev/", {mode: 'no-cors'});
+            statusDiv.textContent = "✅ Serveur en ligne";
+            statusDiv.style.backgroundColor = "#28a745";
+            statusDiv.style.color = "white";
+        } catch (e) {
+            statusDiv.textContent = "❌ Serveur inaccessible";
+            statusDiv.style.backgroundColor = "#dc3545";
+            statusDiv.style.color = "white";
+        }
+    }
+
+    checkServer();
+    setInterval(checkServer, 30000);
+    </script>
+</body>
+</html>
