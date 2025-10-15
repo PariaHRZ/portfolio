@@ -19,12 +19,11 @@
     ">
     Vérification du serveur...
     </div>
-
     <script>
     async function checkServer() {
         const statusDiv = document.getElementById("server-status");
         try {
-            const res = await fetch("https://ryan.pixicode.dev/", {mode: 'no-cors'});
+            const res = await fetch("https://api.ryan.pixicode.dev/", {mode: 'no-cors'});
             statusDiv.textContent = "✅ Serveur en ligne";
             statusDiv.style.backgroundColor = "#28a745";
             statusDiv.style.color = "white";
@@ -34,7 +33,6 @@
             statusDiv.style.color = "white";
         }
     }
-
     checkServer();
     setInterval(checkServer, 30000);
     </script>
