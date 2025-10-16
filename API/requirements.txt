@@ -3,3 +3,4 @@ uvicorn
 python-dotenv
 mailjet-rest
 python-multipart
+prometheus_client>=0.15.0
