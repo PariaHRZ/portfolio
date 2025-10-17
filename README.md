@@ -5,7 +5,7 @@
 <!-- PROJECT SHIELDS -->
 
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+[![Stars][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -236,9 +236,9 @@ Aucune reproduction, modification ou diffusion du code n’est autorisée sans a
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[forks-shield]: https://img.shields.io/github/forks/PariaHRZ/portfolio.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/PariaHRZ/portfolio?style=for-the-badge
 [forks-url]: https://github.com/PariaHRZ/portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/PariaHRZ/portfolio.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/PariaHRZ/portfolio?style=for-the-badge
 [stars-url]: https://github.com/PariaHRZ/portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/PariaHRZ/portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/PariaHRZ/portfolio/issues
