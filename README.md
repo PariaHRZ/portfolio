@@ -257,3 +257,4 @@ Aucune reproduction, modification ou diffusion du code n’est autorisée sans a
 [JS-url]: https://developer.mozilla.org/fr/docs/Web/JavaScript
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/tonprofil/
+
