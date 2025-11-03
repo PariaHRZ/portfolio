@@ -22,7 +22,7 @@
     Un projet complet combinant un front-end stylisé type “terminal” et une API FastAPI sécurisée pour la gestion des messages de contact.
     <br />
     <br />
-    <a href="https://ryan.pixicode.dev"><strong>Voir le site en ligne »</strong></a>
+    <a href="https://ryan.pixicode.dev" target="_blank"><strong>Voir le site en ligne »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ryan/portfolio/issues/new?labels=bug&template=bug-report---.md">Signaler un bug</a>
