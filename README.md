@@ -140,7 +140,6 @@ docker compose logs -f ryan_api
 * **Méthode** : In-memory par adresse IP
 * **Exemple** : 5 requêtes / 60 secondes
 * **Réponse 429** : inclut un en-tête `Retry-After` (en secondes)
-* **Production** : pour un déploiement multi-process, il est conseillé d’utiliser **Redis** avec **SlowAPI** ou un middleware équivalent.
 
 ---
 
